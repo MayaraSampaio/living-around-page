@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+#navBar{
+    z-index: 5;
+}
+.font-justin-slab-hero{
+    font-family: "Josefin Slab", serif;
+    font-size: 85px !important;
+    font-style: bold;
+    
+}
+.font-justin-slab{
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+}
+#heroSection{
+    height: 100vh;
+    
+}
+ul{
+    list-style: none;
+}
+.color-bg-trabalhos-remotos{
+    background-color: rgba(180, 155, 44, 0.25);
+    
+}
+
