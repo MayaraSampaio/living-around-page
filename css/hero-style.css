@@ -1,0 +1,16 @@
+
+
+
+.responsive-title{
+  font-size: clamp(1.5rem, 5vw + 1rem, 4rem);
+  line-height: 1.1;
+}
+@media (min-width: 900px) {
+  .responsive-title {
+    font-size: 85px !important;
+  }
+}
+
+#heightSectionImg{
+    height: 100vh !important;
+}

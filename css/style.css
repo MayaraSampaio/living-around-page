@@ -1,45 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
-
-
 .font-justin-slab-hero{
     font-family: "Josefin Slab", serif;
-    font-size: 85px !important;
-    font-style: bold;
-    
-}
-#navBar a{
-    font-family: "Josefin Slab", serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.18;
-    letter-spacing: 0em;
-    color:black !important;
-    z-index: 200;
-}
-#navBar .nav-link {
-  padding: 1rem 1rem;
-}
-
-
-#heightSectionImg{
-    height: 100vh !important;
-}
-
-ul{
-    list-style: none;
-}
-#TrabalhosRemotos{
-    background-color: rgba(180, 155, 44, 0.25);
-    width: 100%;   
-    padding: 100px 0;    
-}
-li{
-    text-align: left !important;
-}
-#listPadding{
-    padding-left: 50% !important;
+    font-style: bold;    
 }
 .juraFont{
     font-family: "Jura", sans-serif;
@@ -54,58 +18,17 @@ li{
 .fs-43 {
     font-size: 43px !important;
 }
-#pTextoApresentacao{
-    font-family: "Jura", sans-serif !important;
-    line-height: 1.18; 
-    letter-spacing:0.2em !important;  
-}
 .colorOlive{
     color: #686931 !important;
 }
-#kombFirstPageimg{
-    height: 515px;
-}
-#btn-descobrir {
-  width: 309px;
-  height: 77px;
-  border-radius: 35px;
-  border: 3px solid #FFFFFF;
-  font-size: 20px; 
-  font-weight: 500; 
-}
+
 .icon-custom-arrow{
     color: white;   
     font-size: 3rem;   
 }
+
 .icon-custom-arrow-black{
     color: black;   
     font-size: 3rem !important; 
 }  
 
-#explorar{
-background-color: rgba(180, 155, 44, 0.25);   
-}
-#btn-explorar {
-  width: 309px;
-  height: 77px;
-  border-radius: 35px;
-  border: 3px solid #000000;
-  font-size: 25px; 
-  letter-spacing: 0rem;
-  line-height: 1.18;
-}
-#blog{
-    height: 690.5px;  
-    background-image: url('../assets/tableFirstPage.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh;
-}
-.blog-btn{
-  width: 309px;
-  height: 77px;
-  border-radius: 35px;
-  font-size: 25px; 
-  letter-spacing: 0rem;
-  line-height: 1.18;  
-}

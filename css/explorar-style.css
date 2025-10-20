@@ -1,0 +1,24 @@
+
+#explorar{
+background-color: rgba(180, 155, 44, 0.25);   
+}
+#btn-explorar {
+  width: 309px;
+  height: 77px;
+  border-radius: 35px;
+  border: 3px solid #000000;
+  font-size: 25px; 
+  letter-spacing: 0rem;
+  line-height: 1.18;
+}
+/* Responsividade para o  botão Explorar */
+@media (max-width: 767.98px) {
+  #explorar .position-absolute.bottom-0.start-0 {
+    position: static !important; 
+    margin-top: 1.5rem;         
+  }
+
+  #explorar .icon-custom-arrow-black {
+    font-size: 1.5rem;          
+  }
+}

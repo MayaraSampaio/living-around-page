@@ -1,0 +1,20 @@
+
+ul{
+    list-style: none;
+}
+#TrabalhosRemotos{
+    background-color: rgba(180, 155, 44, 0.25);
+    width: 100%;   
+    padding: 100px 0;    
+}
+li{
+    text-align: left !important;
+}
+#listPadding{
+    padding-left: 50% !important;
+}
+#pTextoApresentacao{
+    font-family: "Jura", sans-serif !important;
+    line-height: 1.18; 
+    letter-spacing:0.2em !important;  
+}

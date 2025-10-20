@@ -1,0 +1,26 @@
+#navBar a{
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0em;
+    z-index: 200;
+}
+#navBar .nav-link {
+  padding: 1rem 1rem;
+}
+navbar-collapse.show .nav-link {
+  color: white !important; 
+  
+}
+
+/* Cor normal quando o menu estiver fechado (mobile) */
+.navbar-collapse:not(.show) .nav-link {
+  color: black !important; 
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-link {
+    color: black !important;
+  }
+}
