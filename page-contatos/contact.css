@@ -1,0 +1,13 @@
+.custom-form {
+  top: 457px;       /* distancia do topo */
+  left: 387px;      /* distancia da esquerda */
+  width: 467px;
+  height: 700px;
+  border-radius: 30px;
+  padding: 20px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.custom-form form {
+  height: 100%;
+}
