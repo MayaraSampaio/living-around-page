@@ -9,6 +9,7 @@
 #navBar .nav-link {
   padding: 1rem 1rem;
 }
+
 navbar-collapse.show .nav-link {
   color: white !important; 
   

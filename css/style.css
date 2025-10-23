@@ -18,6 +18,12 @@
 .fs-43 {
     font-size: 43px !important;
 }
+.fs-25 {
+    font-size: 25px !important;
+    letter-spacing: 0 !important;
+    font-style: normal;
+    
+}
 .colorOlive{
     color: #686931 !important;
 }
