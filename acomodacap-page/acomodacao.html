@@ -7,6 +7,7 @@
   <title>Acomodacao</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="acomodacao.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -36,6 +37,7 @@
     </nav>
 
   </section>
+  <!-- Background Image-->
   <section class="position-relative overflow-hidden" style="height: 85vh;">
     <img src="/acomodacap-page/assets/komb-acomodacao.jpg" class="position-absolute w-100 start-0" style="top: -80vh; height: auto;" alt="Kombi">
 
@@ -46,108 +48,168 @@
       </div>
     </div>
   </section>
+
   <!-- Colums -->
-  <section>
-    <div class="container-fluid bg-bege">
-      <div class="row g-3 juraFont align-items-center">
+  <section id="acomodacao-cards" class="container-fluid bg-bege py-5 border border-danger">
 
-        <!-- Coluna da esquerda -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/hippie-ride.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+    <div class="row g-5 gap-lg-5 justify-content-center">
+
+      <!-- Primeiro Card Hippie Ride -->
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/hippie-ride.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body pt-0">
+            <h5 class="card-title text-center">Hippie Ride</h5>
+            <p class="card-text">A partir de 50€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center md-5">
+              <button class="btn">+info</button>
             </div>
           </div>
         </div>
-
-        <!-- Coluna da direita -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start ">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/komb-zoom.jpg" class="card-img-top card-img-fixed" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coluna da esquerda -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top card-img-fixed" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coluna da direita -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coluna da esquerda -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coluna da direita -->
-        <div class="col-12 col-md-6 ">
-          <div class="container d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center text-md-start">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
-    </div>
-    </div>
+
+      <!-- Segundo Card > Harvest Ride-->
+
+      <div class="col-12 col-md-5 col-lg-4 justify-content-center">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/komb-zoom.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Harvest Ride</h5>
+            <p class="card-text">A partir de 80€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center md-5">
+              <button class="btn">+info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- terceiro card: Nomade Ride -->
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/card-3.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body pt-0">
+            <h5 class="card-title text-center">Nomade Ride</h5>
+            <p class="card-text">A partir de 100€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center  md-5">
+              <button class="btn">+info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quarto Card : Family Ride -->
+
+      <div class="col-12 col-md-5 col-lg-4 justify-content-center">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/card-4.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Family Ride</h5>
+            <p class="card-text">A partir de 50€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center md-5">
+              <button class="btn">+info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quinto card: Surf Ride -->
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/card-5.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body pt-0">
+            <h5 class="card-title text-center">Surf Ride</h5>
+            <p class="card-text">A partir de 60€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center md-5">
+              <button class="btn">+info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sexto Card: Cave Rive -->
+
+      <div class="col-12 col-md-5 col-lg-4 justify-content-center">
+        <div class="card h-100 rounded-4 overflow-hidden">
+          <div class="container p-4">
+            <img src="assets/card-6.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Cave Ride</h5>
+            <p class="card-text">A partir de 30€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul>
+              <li>Cozinha equipada;</li>
+              <li>Cama de Casal;</li>
+              <li>WC Portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <div class="d-flex justify-content-center md-5">
+              <button class="btn">+info</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </section>
 
+  <!-- Footer -->
+  <footer class="container-fluid text-center bg-black text-white py-5">
+    <div class="">
+      <h5>LIVING AROUND</h5>
+    </div>
 
-
-
-
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <a href="#" class="btn btn-secondary social-icon"><i class="bi bi-facebook "></i></a>
+      <a href="#" class="btn btn-secondary social-icon "><i class="bi bi-instagram"></i></a>
+      <a href="#" class="btn btn-secondary social-icon"><i class="bi bi-twitter-x"></i></a>
+    </div>
+    <!-- Texto "Powered by Cesae Digital" -->
+    <p class="footer-credit m-3 juraFont fs-15">Powered by Cesae Digital</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

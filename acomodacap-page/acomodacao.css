@@ -2,7 +2,16 @@
   background-color: rgba(180, 155, 44, 0.25)
 }
 .card-img-fixed {
-  height: 200px;           
+  height: 100px;           
   object-fit: cover;       
   object-position: center;
+}
+.card-acomodacao-img{
+  padding: 20px !important;
+  height: 300px;
+  object-fit: cover
+}
+
+.border-card-img{
+  border-radius: 12px !important;
 }
