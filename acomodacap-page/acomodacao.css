@@ -1,0 +1,8 @@
+.bg-bege{
+  background-color: rgba(180, 155, 44, 0.25)
+}
+.card-img-fixed {
+  height: 200px;           
+  object-fit: cover;       
+  object-position: center;
+}
