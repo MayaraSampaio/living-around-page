@@ -72,20 +72,6 @@ O projeto está hospedado no **GitHub Pages**:
 - **Locais** (`locais-page/locais.html`) - Mapa de localizações
 - **Contatos** (`page-contatos/page-contatos.html`) - Formulário de contato
 
-## 🎨 Paleta de Cores
-
-- **Primária**: `#686931` (Verde Oliva)
-- **Secundária**: `rgba(180, 155, 44, 0.25)` (Bege)
-- **Neutro**: `#D9D9D9` (Cinza Claro)
-- **Preto**: `#000000`
-- **Branco**: `#FFFFFF`
-
-## 🖋️ Tipografia
-
-- **Títulos**: Josefin Slab (Bold)
-- **Corpo**: Jura (Regular, Bold)
-
-
 
 
 Este projeto foi desenvolvido como parte do curso **Cesae Digital**.
