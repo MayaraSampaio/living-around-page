@@ -1,33 +1,65 @@
+/***********************
+IMPORTS
+************************/
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
+
+/***********************
+FONTES
+************************/
 .font-justin-slab-hero{
     font-family: "Josefin Slab", serif;
     font-style: bold;    
 }
+
 .juraFont{
     font-family: "Jura", sans-serif;
     line-height: 1.18;
 }
+
 .fs-30 {
     font-size: 30px !important;
-  }
+}
+
 .fs-15{
     font-size: 15px;
 }
+
 .fs-43 {
     font-size: 43px !important;
 }
+
 .fs-25 {
     font-size: 25px !important;
     letter-spacing: 0 !important;
-    font-style: normal;
-    
+    font-style: normal;    
 }
+
 .colorOlive{
     color: #686931 !important;
 }
 
+.fs-80{
+    font-size: 80px;
+}
+
+.responsive-title{
+    font-size: clamp(1.5rem, 5vw + 1rem, 4rem);
+    line-height: 1.1;
+}
+
+
+@media (min-width: 900px) {
+    .responsive-title {
+        font-size: 85px !important;
+    }
+}
+
+
+/***********************
+ICONES
+************************/
 .icon-custom-arrow{
     color: white;   
     font-size: 3rem;   
@@ -36,5 +68,210 @@
 .icon-custom-arrow-black{
     color: black;   
     font-size: 3rem !important; 
-}  
+}
 
+
+/***********************
+NAVBAR
+************************/
+#navBar a{
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0em;
+    z-index: 200;
+}
+
+#navBar .nav-link {
+    padding: 1rem 1rem;
+}
+
+navbar-collapse.show .nav-link {
+    color: white !important; 
+}
+
+.navbar-collapse:not(.show) .nav-link {
+    color: black !important; 
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        color: black !important;
+    }
+}
+
+
+/***********************
+HERO
+************************/
+#heightSectionImg{
+    height: 100vh !important;
+}
+
+
+/***********************
+SECTION TRABALHOS REMOTOS
+************************/
+ul{
+    list-style: none;
+}
+
+#TrabalhosRemotos{
+    background-color: rgba(180, 155, 44, 0.25);
+    width: 100%;   
+    padding: 100px 0;    
+}
+
+li{
+    text-align: left !important;
+}
+
+#listPadding{
+    padding-left: 50% !important;
+}
+
+#pTextoApresentacao{
+    font-family: "Jura", sans-serif !important;
+    line-height: 1.18; 
+    letter-spacing:0.2em !important;  
+}
+
+.trabalhos-remotos-box {
+    position: relative;
+    padding: 40px 20px; 
+}
+
+@media (max-width: 768px) {
+    .trabalhos-remotos-box::before,
+    .trabalhos-remotos-box::after {
+        width: 50px;
+        height: 400px;
+        left: 300px;
+        right: auto;
+        border-width: 3px;
+    }
+}
+
+/* BORDA DO CANTO SUPERIOR ESQUERDO */
+.trabalhos-remotos-box::before {
+    content: "";              
+    position: absolute;       
+    top: -10px;              
+    left: 60px;           
+    width: 50px;            
+    height: 50px;            
+    border-top: 6px solid black;    
+    border-left: 6px solid black;   
+}
+
+/* BORDA DO CANTO INFERIOR DIREITO */
+.trabalhos-remotos-box::after {
+    content: "";              
+    position: absolute;       
+    bottom: -20px;
+    right:80px;
+    width: 50px;             
+    height: 50px;            
+    border-bottom: 6px solid black;
+    border-right: 6px solid black;
+}
+
+
+/***********************
+SECTION DESCOBRIR
+************************/
+#kombFirstPageimg{
+    height: 515px;
+    object-fit: cover;
+}
+
+#btn-descobrir {
+   font-family:  "Jura", sans-serif;
+    width: 309px;
+    height: 77px;
+    border-radius: 35px;
+    border: 3px solid #FFFFFF;
+    font-size: 25px; 
+    font-weight: 500; 
+}
+
+@media (max-width: 767.98px) {
+    #descobrir .position-absolute.bottom-0.end-0 {
+        position: static !important; 
+        margin-top: 1.5rem;         
+    }
+
+    #descobrir .icon-custom-arrow {
+        font-size: 3rem;           
+    }
+}
+
+
+/***********************
+SECTION EXPLORAR
+************************/
+#explorar{
+    background-color: rgba(180, 155, 44, 0.25);   
+}
+
+#btn-explorar {
+    font-family:  "Jura", sans-serif;
+    width: 309px;
+    height: 77px;
+    border-radius: 35px;
+    border: 3px solid #000000;
+    font-size: 25px; 
+    letter-spacing: 0rem;
+    line-height: 1.18;
+}
+
+
+@media (max-width: 767.98px) {
+    #explorar .position-absolute.bottom-0.start-0 {
+        position: static !important; 
+        margin-top: 1.5rem;         
+    }
+
+    #explorar .icon-custom-arrow-black {
+        font-size: 1.5rem;          
+    }
+}
+
+
+/***********************
+SECTION BLOG
+************************/
+#blog{
+    height: 690.5px;  
+    background-image: url('../assets/tableFirstPage.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+}
+
+.blog-btn{
+    width: 309px;
+    height: 77px;
+    border-radius: 35px;
+    font-size: 25px; 
+    letter-spacing: 0rem;
+    line-height: 1.18; 
+}
+
+
+@media (max-width: 767.98px) {
+    #blog .position-absolute.bottom-0.end-0 {
+        position: static !important; 
+        margin-top: 1.5rem;          
+    }
+
+    #blog .icon-custom-arrow-black {
+        font-size: 1.75rem;          
+    }
+
+    #blog {
+        flex-direction: column;     
+        padding: 4rem 1rem;          
+    }
+}

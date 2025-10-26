@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contactos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
- 
+
   <!-- Navbar -->
-  <section id="navBar" class="position-relative">
+  <section id="navBar" class="position-relative ">
     <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 bg-transparent" style="z-index: 1000;">
       <div class=" container-fluid">
 
         <!-- Logo a esquerda -->
-        <a class="navbar-brand" href="#">
-          <img src="assets/lines-leaning-solid 1.png" alt="logo" width="40" height="40">
+        <a class="navbar-brand" href="/index.html">
+          <img src="assets/vector-dark.png" alt="logo" width="40" height="40">
         </a>
 
         <!-- Botão  -->
@@ -30,9 +30,9 @@
         <!-- Links a direita -->
         <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5 font-justin-slab-hero fw-bold">
-            <li class="nav-item"><a class="nav-link active text-white" href="#">ACOMODAÇÃO</a></li>
-            <li class="nav-item"><a class="nav-link active text-white" href="#">LOCAIS</a></li>
-            <li class="nav-item"><a class="nav-link active text-white" href="#">BLOG</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" href="/acomodacap-page/acomodacao.html">ACOMODAÇÃO</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" href="/index.html">LOCAIS</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" href="/index.html">BLOG</a></li>
             <li class="nav-item"><a class="nav-link active text-white" href="#">CONTATOS</a></li>
           </ul>
         </div>
@@ -40,50 +40,77 @@
     </nav>
   </section>
 
-  <!-- Hero Image -->
-  <section id="contactPage">
-    <div class="container-fluid position-relative p-0">
-      <img class="img-fluid w-100" src="assets/bg-contact.jpg" alt="Hero">
+  <!--HERO-->
+  <section class="hero-container">
+
+    <!-- Background -->
+    <div class="container-fluid position-absolute p-0">
+      <img src="assets/bg-contact.jpg" alt="Hero">
     </div>
-    <div class="position-absolute top-50 start-0 translate-middle-y w-100">
-      <div class="container ">
-        <div class="row align-items-center">
-          <!--Formulario esquerda-->
-          <div class="col-lg-6">
-            <form class="bg-black bg-opacity-75 text-white p-4 rounded">
-              <!-- Nome -->
+
+    <div class="content-overlay-centered">
+      <div class="container position-relative">
+        <div class="row align-items-center g-4">
+
+          <!-- Formulário -->
+          <div class="col-12 col-lg-4">
+            <form class="form-contact text-white">
               <div class="mb-3">
                 <label for="textNome" class="form-label">Nome:</label>
-                <input type="text" class="form-control form-control-lg p-3" id="textNome" placeholder="Digite seu nome aqui">
+                <input type="text" class="form-control form-control-lg" id="textNome" placeholder="Digite seu nome aqui">
               </div>
-              <!-- Email -->
+
               <div class="mb-3">
                 <label for="inputEmail3" class="form-label">Email:</label>
-                <input type="email" class="form-control form-control-lg p-3" id="inputEmail3" placeholder="name@example.com">
+                <input type="email" class="form-control form-control-lg" id="inputEmail3" placeholder="name@example.com">
               </div>
-              <!-- Mensagem -->
+
               <div class="mb-3">
                 <label for="inputMensagem" class="form-label">Mensagem:</label>
-                <textarea class="form-control form-control-lg" id="inputMensagem" rows="3 " placeholder="Envie-me uma mensagem"></textarea>
+                <textarea class="form-control form-control-lg" id="inputMensagem" rows="3" placeholder="Envie-me uma mensagem"></textarea>
               </div>
-              <!-- Botão -->
+
               <div class="text-center">
-                <button type="submit" class="btn btn-outline-light btn-lg px-5 rounded-pill">Enviar</button>
+                <button type="button" class="btn btn-outline-light btn-lg px-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Enviar
+                </button>
               </div>
             </form>
+
           </div>
-          <div class="col-lg-6 ">
-            <div class="text-white text-center">
-              <p class="fw-bold fs-5">"Viajar é descobrir que todos estão errados sobre outros países."</p>
+          <!-- Citação -->
+          <div class=" col-12 col-lg-6 ">
+            <div class="text-white text-center quote-section">
+              <p class="fw-bold fs-5 juraFont" style="padding-top:0px;">"Viajar é descobrir que todos estão errados sobre outros países."</p>
               <p class="text-end fw-bold fs-6">– Aldous Huxley</p>
             </div>
           </div>
         </div>
       </div>
     </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
   </section>
 
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-0">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center juraFont fw-bold">
+          <p>Seu formulário foi enviado com sucesso</p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="/page-contatos/page-contatos.html" class="btn btn-primary w-50" data-bs-dismiss="modal">
+            OK
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </section>
 </body>
 
 </html>

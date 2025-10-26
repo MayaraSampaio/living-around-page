@@ -1,15 +1,111 @@
-.custom-form {
-  top: 457px;       /* distancia do topo */
-  left: 387px;      /* distancia da esquerda */
-  width: 467px;
-  height: 700px;
-  border-radius: 30px;
-  padding: 20px;
-  opacity: 1;
-  transform: rotate(0deg);
-  z-index: 5;
-  left: 187px !important;
-}
-.custom-form form {
-  height: 100%;
-}
+
+    .hero-container {
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero-container img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .content-overlay-centered {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      padding: 0 15px;
+      z-index: 10;
+    }
+
+    /* ===== CITAÇÃO NO CANTO SUPERIOR DIREITO ===== */
+    .quote-section {
+      position: absolute;
+      top: 8rem;
+      right: 2rem;     
+      padding: 2.5rem 2rem;
+      max-width: 500px;
+      
+    }
+
+    .quote-section p:first-child {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .quote-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== FORMULÁRIO ===== */
+    .form-contact {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 5rem;
+    }
+
+    .form-contact .form-control {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      padding: 1rem;
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    
+    @media (max-width: 991px) {
+ 
+      .content-overlay-centered {
+        position: relative;
+        top: auto;
+        transform: none;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+      }
+
+      .hero-container img {
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .form-contact {
+        margin-top: 2rem;
+      }
+      .quote-section {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 2rem;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .content-overlay-centered {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+
+      .form-contact {
+        margin-top: 1.5rem;
+        padding: 1.25rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .content-overlay-centered {
+        padding-top: 4rem;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .form-contact {
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    }
+  

@@ -7,6 +7,7 @@
   <title>Acomodacao</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="acomodacao.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -17,51 +18,47 @@
       <div class=" container-fluid">
 
         <!-- Logo a esquerda -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img src="assets/vector-dark.png" alt="logo" width="40" height="40">
         </a>
-        <!-- Botão  -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler bg-black " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Links a direita -->
+
+
         <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5 font-justin-slab-hero fw-bold">
             <li class="nav-item"><a class="nav-link active text-black" href="#">ACOMODAÇÃO</a></li>
-            <li class="nav-item"><a class="nav-link active text-black" href="#">LOCAIS</a></li>
-            <li class="nav-item"><a class="nav-link active text-black" href="#">BLOG</a></li>
-            <li class="nav-item"><a class="nav-link active text-black" href="#">CONTATOS</a></li>
+            <li class="nav-item"><a class="nav-link active text-black" href="/locais-page/locais.html">LOCAIS</a></li>
+            <li class="nav-item"><a class="nav-link active text-black" href="/index.html">BLOG</a></li>
+            <li class="nav-item"><a class="nav-link active text-black" href="/locais-page/locais.html">CONTATOS</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
   </section>
-  <!-- Background Image-->
-  <section class="position-relative overflow-hidden" style="height: 85vh;">
-    <img src="/acomodacap-page/assets/komb-acomodacao.jpg" class="position-absolute w-100 start-0" style="top: -80vh; height: auto;" alt="Kombi">
 
-    <!-- Texto -->
-    <div class="position-absolute top-50 start-0 w-100 translate-middle-y bg-dark bg-opacity-50  py-4" style="z-index: 100; top: 40vh !important;">
-      <div class="container">
-        <h1 class="text-white text-center fw-bold display-4 m-0">O SEU NOVO OFFICE</h1>
-      </div>
+  <!-- Hero section-->
+  <section id="hero-section" class="ccontainrer-fluid d-flex align-items-center justify-content-center text-center text-white">
+    <div class=" container-fluid ">
+      <h1 class="fw-bold bg-black  bg-opacity-50 display-4 font-justin-slab-hero fs-80 m-0">O SEU NOVO OFFICE</h1>
     </div>
   </section>
 
-  <!-- Colums -->
-  <section id="acomodacao-cards" class="container-fluid bg-bege py-5 border border-danger">
 
-    <div class="row g-5 gap-lg-5 justify-content-center">
+  <!-- Colums -->
+  <section id="acomodacao-cards" class="container-fluid bg-bege py-5">
+    <div class="row g-5 gap-lg-5 justify-content-center juraFont ">
 
       <!-- Primeiro Card Hippie Ride -->
       <div class="col-12 col-md-5 col-lg-4">
-        <div class="card h-100 rounded-4 overflow-hidden">
-          <div class="container p-4">
-            <img src="assets/hippie-ride.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg ">
+          <div class="container p-4 ">
+            <img src="assets/hippie-ride.jpg" class="card-img-top card-acomodacao-img  " alt="...">
           </div>
-          <div class="card-body pt-0">
-            <h5 class="card-title text-center">Hippie Ride</h5>
+          <div class="card-body pt-0 fw-bold">
+            <h5 class="card-title text-center fw-bold">Hippie Ride</h5>
             <p class="card-text">A partir de 50€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -71,7 +68,7 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center md-5">
-              <button class="btn">+info</button>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#JanelaModal">+ info</button>
             </div>
           </div>
         </div>
@@ -80,12 +77,12 @@
       <!-- Segundo Card > Harvest Ride-->
 
       <div class="col-12 col-md-5 col-lg-4 justify-content-center">
-        <div class="card h-100 rounded-4 overflow-hidden">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg">
           <div class="container p-4">
-            <img src="assets/komb-zoom.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+            <img id="haverst-ride" src="assets/komb-zoom.jpg" class="card-img-top card-acomodacao-img revert-image " alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Harvest Ride</h5>
+          <div class="card-body fw-bold">
+            <h5 class="card-title text-center fw-bold">Harvest Ride</h5>
             <p class="card-text">A partir de 80€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -95,19 +92,19 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center md-5">
-              <button class="btn">+info</button>
+              <button class="btn fw-bold"> + info</button>
             </div>
           </div>
         </div>
       </div>
       <!-- terceiro card: Nomade Ride -->
       <div class="col-12 col-md-5 col-lg-4">
-        <div class="card h-100 rounded-4 overflow-hidden">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg">
           <div class="container p-4">
-            <img src="assets/card-3.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+            <img src="assets/card-3.jpg" class="card-img-top card-acomodacao-img revert-image " alt="...">
           </div>
-          <div class="card-body pt-0">
-            <h5 class="card-title text-center">Nomade Ride</h5>
+          <div class="card-body pt-0 fw-bold">
+            <h5 class="card-title text-center juraFont fw-bold">Nomade Ride</h5>
             <p class="card-text">A partir de 100€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -117,7 +114,7 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center  md-5">
-              <button class="btn">+info</button>
+              <button class="btn fw-bold"> + info</button>
             </div>
           </div>
         </div>
@@ -126,12 +123,12 @@
       <!-- Quarto Card : Family Ride -->
 
       <div class="col-12 col-md-5 col-lg-4 justify-content-center">
-        <div class="card h-100 rounded-4 overflow-hidden">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg">
           <div class="container p-4">
-            <img src="assets/card-4.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+            <img src="assets/card-4.jpg" class="card-img-top card-acomodacao-img card-img-bottom revert-image" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Family Ride</h5>
+          <div class="card-body fw-bold">
+            <h5 class="card-title text-center fw-bold">Family Ride</h5>
             <p class="card-text">A partir de 50€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -141,19 +138,19 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center md-5">
-              <button class="btn">+info</button>
+              <button class="btn fw-bold"> + info</button>
             </div>
           </div>
         </div>
       </div>
       <!-- Quinto card: Surf Ride -->
       <div class="col-12 col-md-5 col-lg-4">
-        <div class="card h-100 rounded-4 overflow-hidden">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg">
           <div class="container p-4">
-            <img src="assets/card-5.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+            <img src="assets/card-5.jpg" class="card-img-top card-acomodacao-img card-img-bottom revert-image" alt="...">
           </div>
-          <div class="card-body pt-0">
-            <h5 class="card-title text-center">Surf Ride</h5>
+          <div class="card-body pt-0 fw-bold">
+            <h5 class="card-title text-center fw-bold">Surf Ride</h5>
             <p class="card-text">A partir de 60€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -163,7 +160,7 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center md-5">
-              <button class="btn">+info</button>
+              <button class="btn fw-bold"> + info</button>
             </div>
           </div>
         </div>
@@ -172,12 +169,12 @@
       <!-- Sexto Card: Cave Rive -->
 
       <div class="col-12 col-md-5 col-lg-4 justify-content-center">
-        <div class="card h-100 rounded-4 overflow-hidden">
+        <div class="card h-100 rounded-4 overflow-hidden shadow-lg">
           <div class="container p-4">
-            <img src="assets/card-6.jpg" class="card-img-top card-acomodacao-img border-card-img" alt="...">
+            <img id="cave-rive" src="assets/card-6.jpg" class="card-img-top card-acomodacao-img revert-image" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Cave Ride</h5>
+          <div class="card-body fw-bold">
+            <h5 class="card-title text-center fw-bold">Cave Ride</h5>
             <p class="card-text">A partir de 30€/dia</p>
             <p class="card-text">Equipada com :</p>
             <ul>
@@ -187,15 +184,16 @@
               <li>Carregador USB</li>
             </ul>
             <div class="d-flex justify-content-center md-5">
-              <button class="btn">+info</button>
+              <button class="btn fw-bold"> + info</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    </div>
 
   </section>
-
   <!-- Footer -->
   <footer class="container-fluid text-center bg-black text-white py-5">
     <div class="">
@@ -210,6 +208,36 @@
     <!-- Texto "Powered by Cesae Digital" -->
     <p class="footer-credit m-3 juraFont fs-15">Powered by Cesae Digital</p>
   </footer>
+  <!-- Modal -->
+  <div id="JanelaModal" class="modal bg-img-card-modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-card-bege juraFont">
+        <div class="modal-header">
+          <img src="assets/hippie-ride.jpg" class="card-img-top card-acomodacao-img " alt="...">
+          <buttton type="button" class="btn btn-close" data-bs-dismiss="modal" </button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title text-center mb-3 juraFont fs-30">Hippie Ride</h3>
+          <p>Imagine acordar com o som das ondas na praia, estacionar à beira de uma floresta serena ou partir numa viagem espontânea sem preocupações com hotéis ou horários. Alugar uma carrinha adaptada é sinônimo de liberdade, conforto e aventura – tudo em um só lugar!</p>
+          <p>A nossa carrinha é a solução perfeita para viajantes que buscam autonomia e praticidade, sem abrir mão do essencial. Por apenas 50€ por dia, você tem um lar sobre rodas totalmente equipado para tornar sua viagem inesquecível:</p>
+          <p>✔ Cozinha completa – Prepare suas refeições favoritas a qualquer momento.<br>
+            ✔ Cama de casal confortável – Descanse com todo o espaço que precisa.<br>
+            ✔ WC portátil – Privacidade e conveniência onde quer que vá.<br>
+            ✔ Carregador USB – Mantenha seus dispositivos sempre prontos para uso.</p>
+          <p>Por que escolher a nossa carrinha?</p>
+          <p>Economia: Mais barato que hotéis e com total flexibilidade.<br>
+            Conforto: Tudo o que você precisa em um espaço compacto e bem organizado.<br>
+            Aventura personalizada: Viaje no seu ritmo, pare onde quiser e crie memórias únicas.</p>
+          <p>Seja para um fim de semana romântico, uma escapada em família ou uma viagem solo cheia de descobertas, a nossa carrinha está pronta para ser a sua companheira de estrada.</p>
+          <p>Reserve já e transforme qualquer destino em casa!</p>
+
+          <div class="text-center">
+            <button id="alugar-btn" type="submit" class="btn btn-primary btn-lg px-5 rounded-pill fw-bold mb-5 w-50">Alugar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

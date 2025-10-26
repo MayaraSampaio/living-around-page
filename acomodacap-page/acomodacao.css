@@ -1,17 +1,124 @@
-.bg-bege{
-  background-color: rgba(180, 155, 44, 0.25)
+
+/***********************
+HERO SECTION
+************************/
+#hero-section {
+  position: relative;
+  height: 85vh;
+  background-image: url("assets/komb-acomodacao.jpg");
+  background-size: cover;         
+  background-position: center;   
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
+.hero-text-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* adjust for brightness of image */
+  z-index: 0;
+}
+
+/***********************
+CARDS
+************************/
 .card-img-fixed {
   height: 100px;           
   object-fit: cover;       
   object-position: center;
 }
-.card-acomodacao-img{
-  padding: 20px !important;
+.card-acomodacao-img {
   height: 300px;
-  object-fit: cover
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  display: block; 
 }
 
-.border-card-img{
-  border-radius: 12px !important;
+#acomodacao-cards{ 
+h5{
+  font-size: 30px;
+
 }
+li,p{
+  font-size: 20px;
+  list-style: disc;
+  padding-left: 2rem;
+
+}
+}
+.card-img-bottom {
+  object-position: 50% 70%;
+}
+
+#cave-rive{
+   object-position: 50% 90%;
+
+}
+.revert-image{
+  transform: scaleX(-1);
+
+}
+#alugar-btn{
+  background-color: #686931;
+  color: black;
+  border: none;
+  padding: 15px;
+  padding-left: 70;
+}
+
+
+/***********************
+BACKGROUNDS
+************************/
+
+.bg-bege{
+  background-color: rgba(180, 155, 44, 0.25)
+}
+.bg-card-bege{
+  background-color: #D9D9D9;
+}
+.bg-img-card-modal{
+  background-image: url("assets/komb-acomodacao.jpg");
+  background-size: cover;         
+  background-position: center;   
+  background-repeat: no-repeat;  
+}
+
+
+/***********************
+RESPONSIVE ADJUSTMENTS
+************************/
+@media (max-width: 768px) {
+  .card-acomodacao-img {
+    height: 220px;
+  }
+
+  .card-img-fixed {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+    height: 60vh;                
+    background-position: top;   
+  }
+
+  #hero-section h1 {
+    font-size: 1.8rem;           
+  }
+}
+
+@media (min-width: 1600px) {
+  #hero-section {
+    background-attachment: fixed; 
+  }
+}
+
+

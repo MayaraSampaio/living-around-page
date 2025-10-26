@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="locais.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section id="navBarLocais" class="position-relative">
+    <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 bg-transparent" style="z-index: 1000;">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <img src="assets/lines-leaning-solid 1.png" alt="logo" width="40" height="40">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+          <ul class="navbar-nav mb-5 mb-lg-2 gap-0 gap-lg-5 font-justin-slab-hero fs-25 fw-bold">
+            <li class="nav-item"><a class="nav-link active text-white fw-bold font-justin-slab-hero" style="color: white !important;" href="/acomodacap-page/acomodacao.html">ACOMODAÇÃO</a></li>
+            <li class="nav-item "><a class="nav-link active fw-bold font-justin-slab-hero" style="color: white !important;" href="/locais-page/locais.html">LOCAIS</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold font-justin-slab-hero" style="color: white !important;" href="/index.html">BLOG</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold font-justin-slab-hero" style="color: white !important;" href="/page-contatos/page-contatos.html">CONTATOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero-container">
+    <div class="container-fluid position-absolute p-0">
+      <img id="bg-img" src="assets/background.jpg" alt="Hero">
+    </div>
+
+    <div class="content-overlay-centered">
+      <div class="container position-relative">
+        <div class="row align-items-start g-5">
+
+          <!-- FORMULÁRIO -->
+          <div class="col-12 col-lg-4">
+            <form id="mapForm" class="form-locais text-black">
+              <div class="mb-5 mt-5">
+                <label for="country" class="form-label fw-bold">Escolha o país:</label>
+                <select id="country" class="form-select" required>
+                  <option value="">Selecione...</option>
+                  <option value="PT">Portugal</option>
+                </select>
+              </div>
+
+              <div class="mb-5">
+                <label for="city" class="form-label fw-bold">Escolha a cidade:</label>
+                <select id="city" class="form-select" required>
+                  <option value="">Selecione...</option>
+                  <option value="Braga">Braga</option>
+                  <option value="Porto">Porto</option>
+                  <option value="Lisboa">Lisboa</option>
+                </select>
+              </div>
+
+              <div class="text-center">
+                <button id="busca-btn" type="submit" class="btn btn-outline-light btn-lg px-5 rounded-pill mb-5">Ver</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- MAPA + TEXTO -->
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+            <div id="map" class="hidden"></div>
+            <div id="localizacao" class="text-white mt-3 p-3 rounded-3 bg-dark bg-opacity-75 w-100 text-center hidden">
+              <p class="mb-1 fw-bold">LIVING AROUND - Porto</p>
+              <p class="mb-1">Rua da Alegria, 666</p>
+              <p class="mb-1">4000-789 - Porto</p>
+              <p class="mb-0">livingaround_porto@living.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="locais.js"></script>
+</body>
+
+</html>
